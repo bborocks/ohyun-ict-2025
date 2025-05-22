@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <ul id="board">
+
+    </ul>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <form id="post-form">
+        <input type="text" id="write">
+        <button>추가</button>
+    </form>
 </body>
+<script>
+    document.querySelector("#post-form").addEventListener("submit", (e)=>{
+        e.preventDefault();
+        if (postText !== "") {
+            const postText = document.querySelector("#write").value
+            const post = document.createElement("li");
+            post.innerText = postText;
+            document.querySelector("#board").appendChild(post)
+            document.querySelector("#write").value = ""
+            
+        }
+
+    })
+</script>
 </html>
