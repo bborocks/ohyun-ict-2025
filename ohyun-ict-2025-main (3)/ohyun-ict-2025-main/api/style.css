@@ -1,0 +1,22 @@
+/* #post-form{
+    display: none;
+} */
+/* #board{
+    display: none;
+} */
+body{
+    background-color: black;
+color: white;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.post-container{
+    background-color: rgb(25, 14, 98);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
